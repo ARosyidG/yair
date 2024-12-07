@@ -1,0 +1,21 @@
+#main{
+  top: 48px;
+  bottom: 0;
+  position: absolute;
+}
+#main .row{
+  height: 100%;
+}
+.navbar{
+  z-index: 3;
+}
+.nav-item:hover{
+  background-color: antiquewhite;
+}
+.nav-item{
+  transition: 0.5s;
+}
+
+.bg-warning {
+  background-color: rgb(120, 48, 19);
+}
