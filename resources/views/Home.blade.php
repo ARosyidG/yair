@@ -11,6 +11,5 @@
             font-size: 1rem;
         ">LOGIN</button></a>
     </div>
-    
 </main>
 @endsection
