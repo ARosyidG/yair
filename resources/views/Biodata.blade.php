@@ -1,4 +1,4 @@
-div@extends('Layout.SideBar')
+@extends('Layout.SideBar')
 @section('Content')
 <ul class="list-group list-group flex-column mb-auto mt-3">
     <li class="list-group-item p-1 bg-success text-white">Biodata</li>
@@ -38,11 +38,6 @@ div@extends('Layout.SideBar')
                 @endif
                     
             </div>
-            @if ()
-                
-            @else
-                
-            @endif
             <div class="form-group mt-3">
                 <div>
                     <label for="Gambar">Gambar</label>
@@ -51,7 +46,7 @@ div@extends('Layout.SideBar')
                     @if ($Anggota->TTD== null)
                         <img class="border rounded p-2" src="" alt="" id="imgPre" class="mt-3" style="height:100px; width:auto;">
                     @else
-                    <img class="border rounded p-2" src="/{{ $Anggota->TTD->Gambar }}" alt="" id="imgPre" class="mt-3" style="height:100px; width:auto;">
+                    <img class="border rounded p-2" src="{{ asset( 'storage/' . $Anggota->TTD->Gambar) }}" alt="" id="imgPre" class="mt-3" style="height:100px; width:auto;">
                         @endif
                 </div>
                 <input type="file" class="form-control" id="Gambar" name="Gambar" onchange="imgPreview()">
