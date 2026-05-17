@@ -8,21 +8,16 @@
     <title>Document</title>
 </head>
 <style>
-    html{
-        bottom: 0;
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        min-height: 100%
+    html, body {
+        height: 100%;
+        margin: 0;
+        background: #4caf50; /* Set a solid green background */
     }
 </style>
-<body style="
-    background: radial-gradient(ellipse at top, #3db17b, transparent),
-                radial-gradient(ellipse at bottom, #183501, rgb(104, 104, 104));
-">
+<body>
     <nav class="navbar" style="
         box-shadow: 0rem 0.1rem 2rem rgb(255, 255, 255), 0rem 0.1rem .1rem rgb(255, 255, 255) inset;
+        background-color: #388e3c;
     ">
         <div class="container-fluid">
             <div class="navbar-brand text-white fw-bold">
